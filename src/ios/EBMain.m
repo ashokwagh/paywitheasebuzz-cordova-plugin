@@ -1,14 +1,14 @@
-#import "Main.h"
+#import "EBMain.h"
 #import <Easebuzz/Easebuzz.h>
 #import <UIKit/UIKit.h>
 
-@interface Main () <PayWithEasebuzzCallback> {
+@interface EBMain () <PayWithEasebuzzCallback> {
      Payment *payment;
 }
     
     @end
 
-@implementation Main
+@implementation EBMain
 
 - (void)paywitheasebuzz:(CDVInvokedUrlCommand *)command {
     NSDictionary *options = [NSJSONSerialization
@@ -18,7 +18,7 @@
                              error:nil];
     
     [self initiatePaymentAction:options];
-    NSLog(@"call native code Main.m");
+    NSLog(@"call native code EBMain.m");
     self.callbackId = [command callbackId];
 }
     

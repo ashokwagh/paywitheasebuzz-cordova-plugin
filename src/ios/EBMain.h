@@ -1,7 +1,7 @@
 #import <Cordova/CDV.h>
 #import <Easebuzz/Easebuzz.h>
 
-@interface Main : CDVPlugin
+@interface EBMain : CDVPlugin
 
 @property NSString *callbackId;
 
