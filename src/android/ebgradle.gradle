@@ -6,6 +6,8 @@ if (project.hasProperty('cdvMinSdkVersion')) {
     } else if (cdvMinSdkVersion.toInteger() < minSdkVersion) {
         ext.cdvMinSdkVersion = minSdkVersion;
     }
+} else {
+  ext.cdvMinSdkVersion = minSdkVersion;
 }
 
 repositories{
